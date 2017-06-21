@@ -12,6 +12,14 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 序列化工具类（基于 Protostuff 实现）
+ * Protostuff序列化过程：
+ * 使用LinkedBuffer分配一块默认大小的buffer空间；
+ * 通过对象的类构建对应的schema；
+ * 使用给定的schema将对象序列化为一个byte数组，并返回
+ * Protostuff反序列化过程：
+ * 使用objenesis实例化一个类的对象；
+ * 通过对象的类构建对应的schema；
+ * 使用给定的schema将byte数组和对象合并，并返回
  *
  * @author huangyong
  * @since 1.0.0
