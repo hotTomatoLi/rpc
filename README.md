@@ -1,3 +1,5 @@
+# 注：此项目来源https://git.oschina.net/huangyong/rpc，仅本人学习使用
+
 # 分布式 RPC 框架 - 使用说明
 
 当前版本：1.3.0
